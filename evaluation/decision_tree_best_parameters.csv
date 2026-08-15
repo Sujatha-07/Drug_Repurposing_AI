@@ -1,0 +1,6 @@
+Parameter,Value
+classifier__class_weight,None
+classifier__criterion,gini
+classifier__max_depth,None
+classifier__min_samples_leaf,1
+classifier__min_samples_split,2

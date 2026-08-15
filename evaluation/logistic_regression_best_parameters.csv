@@ -1,0 +1,2 @@
+classifier__solver,classifier__class_weight,classifier__C
+lbfgs,balanced,3.0
