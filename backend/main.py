@@ -4,6 +4,11 @@ from pydantic import BaseModel
 
 from backend.predictor import predict_drug
 
+
+# ============================================================
+# MODEL COMPARISON
+# ============================================================
+
 MODEL_COMPARISON = {
     "Logistic Regression": 55.44,
     "Decision Tree": 49.74,
@@ -64,15 +69,12 @@ def predict(request: DrugRequest):
 
     try:
 
-        result = predict_drug(
-            request.drug_name
-        )
+        result = predict_drug(request.drug_name.strip())
 
         return {
             "success": True,
             "result": result,
             "model_comparison": MODEL_COMPARISON
-
         }
 
     except ValueError as e:
