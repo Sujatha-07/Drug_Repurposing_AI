@@ -338,7 +338,7 @@ function Prediction() {
     try {
 
       const response = await fetch(
-  "https://drug-repurposing-ai-backend.onrender.com/predict",
+           "https://drug-repurposing-ai-backend.onrender.com/predict",
         {
           method: "POST",
 
